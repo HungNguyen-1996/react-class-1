@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b8</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="b8.css">
+</head>
+
+<body>
+    <!-- <div class="banner">
+        <div class="banner1">
+            <div class="div1">Home</div>
+            <div class="div2"> Adimn</div>
+            <div class="div3">Login</div>
+            <div class="div4">Sign Up</div>
+        </div>
+    </div>
+    <div>
+        <img src="C:\Users\LENOVO\Desktop\code\anh\tgdd.jpg" width="100%" height="300px">
+    </div>
+    <div class="image1">
+        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/ip14-720-220-720x220-3.png"
+            width="49.8%" height="210px" >
+        <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/03/banner/sdptn720-220-720x220-1.png"
+            width="49.8%" height="210px">
+    </div> -->
+
+    <input type="text" class="input_product_url" value="url">
+    <input type="text" id="input_product_name" value="name">
+    <input type="number" id="input_product_price" value="price">
+    <input type="text" id="input_product_manufaturor" value="manufaturor">
+    <button id="submit">Append text</button>
+    <!-- <p id="input-1-value">input 1: </p>
+    <p class="input-2-value">input 2: </p> -->
+
+    </br>
+    <div id="image-container">
+
+    </div>
+
+    <script language="javaScript">
+        // function submit() {
+        //     $(document).ready(function () {
+        //         var url = $(".input_product_url").val();
+        //         var name = $("#input_product_name").val();
+        //         var price = $("#input_product_price").val();
+        //         var manufaturor = $("#input_product_manufaturor").val();
+        //         // $("#input-1-value").text(input1Value);
+        //         // $(".input-2-value").text(input2Value);
+        //         console.log(url);
+        //         console.log(name);
+        //         console.log(price);
+        //         console.log(manufaturor);
+        //         const obj = {};
+
+        //         var product = {
+        //             "url": url,
+        //             "name": name,
+        //             "price": price,
+        //             "manufaturor": manufaturor
+        //         }
+        //         console.log(product);
+        //     })
+        // }
+
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                var url = $(".input_product_url").val();
+                var name = $("#input_product_name").val();
+                var price = $("#input_product_price").val();
+                var manufaturor = $("#input_product_manufaturor").val();
+                // $("#input-1-value").text(input1Value);
+                // $(".input-2-value").text(input2Value);
+                console.log(url);
+                console.log(name);
+                console.log(price);
+                console.log(manufaturor);
+
+                var product = {
+                    "url": url,
+                    "name": name,
+                    "price": price,
+                    "manufaturor": manufaturor
+                }
+                console.log(product);
+
+                var products = [
+                // {
+                //     url: 'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/298377/samsung-galaxy-a34-5g-xanh-thumb-600x600.jpg',
+                //     name: 'san pham 1',
+                //     price: 10000,
+                //     manufaturor: 'cong ty 1'
+                // },
+                // {
+                //     url: 'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/303163/xiaomi-redmi-12c-blue-thumb-600x600.jpg',
+                //     name: 'san pham 2',
+                //     price: 10000,
+                //     manufaturor: 'cong ty 2'
+                // },
+                // {
+                //     url: 'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/267211/Samsung-Galaxy-S21-FE-vang-1-2-600x600.jpg',
+                //     name: 'san pham 3',
+                //     price: 10000,
+                //     manufaturor: 'cong ty 3'
+                // },
+                // {
+                //     url: 'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/251192/iphone-14-pro-max-vang-thumb-600x600.jpg',
+                //     name: 'san pham 4',
+                //     price: 10000,
+                //     manufaturor: 'cong ty 4'
+                // },
+                // {
+                //     url: 'https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/Products/Images/42/285082/oppo-a57-den-thumb-600x600.jpeg',
+                //     name: 'san pham 5',
+                //     price: 10000,
+                //     manufaturor: 'cong ty 4'
+                // }https://www.freecodecamp.org/news/javascript-array-of-objects-tutorial-how-to-create-update-and-loop-through-objects-using-js-array-methods/
+            ]
+            products.unshift(product);
+
+            for (i = 0; i < products.length; i++) {
+                var item = products[i];
+                $("#image-container").append("<div class='anh'><img class='image' src= " + item.url + "><p class='text'>"
+                    + item.name + "</p><p class='text'>hang san xuat:"
+                    + item.manufaturor +
+                    "</p><p class='text'>gia: " + item.price + "Dong </p></div>");
+                $("img").addClass("image-content");
+            }
+            });
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+*{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.top ul{
+    display: inline-flex;
+
+    list-style-type: none;
+}
+.top li{
+    padding: 15px;
+}
+.ltn{
+    
+    padding-left: 5px;
+}
+.ltn1{
+    
+    padding-left: 50px;
+}
+.top img{
+    width: 200px;
+}
+.ltn img{
+    width: 1pc;
+}
+.ltn span{
+    color: yellow;
+    font-weight: bolder;
+}
+.ltn1 img{
+    width: 1pc;
+}
+.ltn1 span{
+    color: yellow;
+    font-weight: bolder;
+}
+.top00{
+    padding: 15px;
+    background: #0066cc;
+    display: flex;
+}
+.mail img{
+    width: 1pc;
+}
+.mail{
+    padding-left: 5px;
+}
+.fb{
+    padding-left: 150px;
+}
+.fb img{
+    width: 1pc;
+}
+.top{
+    display: flex;
+    position: relative;
+}
+.vti{
+    position: absolute;
+    left: 50px;
+}
+.menu{
+    padding-left: 200px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+
+    
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 300px;
+    border-radius: 15px;
+    
+    z-index: 1;
+  }
+  .line{
+    height: 2px;
+    background-color: blue;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+

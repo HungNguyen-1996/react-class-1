@@ -1,0 +1,60 @@
+.item {
+    float: left;
+    width: 5%;
+
+}
+.t{
+    margin: 20px;
+    background-color: aqua;
+    width: 300%;
+}
+
+.right{
+
+    float: right;
+    padding-right: 40%;
+}
+
+
+
+.Banner{
+    background-color: rgba(122, 119, 113, 0.678);
+    height: 100px;
+}
+
+.Footer{
+    background-color: rgba(122, 119, 113, 0.678);
+    clear: both;
+    height: 100px;
+}
+
+
+.header {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+.main-content {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+.sidebar{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+.twin1 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+.twin2 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}

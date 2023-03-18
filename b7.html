@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN</title>
+    <link rel="stylesheet" href="b7.css">
+</head>
+
+<body>
+    <from method="post" id="myform">
+        <div>
+            <p>Tên : <input type="text" class="input1" value="text 1"> </p>
+            <p> Ngày Sinh: <input type="datetime" class="input2" value="text 2"> </p>
+            <p> Mã lớp: <input type="number" class="input3" value="text 3"></p>
+            <P>
+                <input type="radio" name="GT" class="gender" value="Nam"> Nam
+                <input type="radio" name="GT" class="gender" value="Nữ"> Nữ
+            </P>
+
+        </div>
+        </br>
+        <button onclick="submit()">Submit</button>
+        <script>
+            function submit() {
+                var text1_value = document.getElementsByClassName('input1')[0].value;
+                var text2_value = document.getElementsByClassName('input2')[0].value;
+                var text3_value = document.getElementsByClassName('input3')[0].value;
+                var text4_value = document.getElementsByClassName('gender');
+
+                var text4_value;
+                
+                for (i = 0; i < text4_value.length; i++) {
+                    if (text4_value[i].checked)
+                        text4_value = text4_value[i].value;
+                }
+                alert("Họ tên: " + text1_value + " \nNgày Sinh: " + text2_value + "\n Mã lớp: " + text3_value + "\n Giới tính: " + text4_value);
+
+            }
+
+
+            // var input1Value = $(".input1")[0].value
+        </script>
+
+    </from>
+
+
+</body>
+
+</html>
