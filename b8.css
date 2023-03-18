@@ -1,0 +1,53 @@
+.banner{
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgb(180, 180, 173);
+
+}
+
+.banner1{
+    display: flex;
+    padding-right: 20px;
+
+}
+
+.image1{
+    display: flex;
+}
+
+.div2{
+    padding-left: 5%;
+}
+
+.div3{
+    padding-left: 75%;
+}
+
+.div4{
+    padding-left: 5%;
+}
+
+.image{
+    text-align: center;
+
+}
+
+.image{
+    width: 100px;
+}
+
+.text{
+    font-size: 20px;
+}
+
+
+
+#image-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.anh{
+    padding-left: 7%;
+}
